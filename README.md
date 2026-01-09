@@ -32,7 +32,7 @@ pnpm i
 
 ---
 
-2. Run portfolio:
+4. Run portfolio:
 
 ```
 pnpm dev
