@@ -13,12 +13,9 @@ export function App() {
 			<Home />
 			<About />
 			<Experience />
-
-			{/*
-				<Projects />
-			
+			<Projects />
 			<Services />
-			<Contact />*/}
+			<Contact />
 		</>
 	);
 }

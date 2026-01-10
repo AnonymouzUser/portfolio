@@ -8,6 +8,6 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<Navbar />
 		<App />
-		{/*<Footer />*/}
+		<Footer />
 	</StrictMode>,
 );
