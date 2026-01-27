@@ -64,7 +64,17 @@ export const ExModal = ({ experience, onClose }: ExModalProps) => {
             <div className="techList">
               {experience.tech.map((tech, index) => (
                 <span key={index} className="techBadge">
-                  {tech}
+                  {Array.isArray(tech) ? (
+                    <>
+                      <span
+                        className="techSvgModal"
+                        dangerouslySetInnerHTML={{ __html: tech[1] }}
+                      />
+                      <span>{tech[0]}</span>
+                    </>
+                  ) : (
+                    tech
+                  )}
                 </span>
               ))}
             </div>

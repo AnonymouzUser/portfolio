@@ -27,11 +27,32 @@ export const ExCard = () => {
                 <path d="M12 5v14M5 12h14" />
               </svg>
             </button>
-            <h2 className="companyTitle">{exp.company}</h2>
+            <div className="companyHeader">
+              {exp.image && (
+                <img
+                  src={exp.image}
+                  alt={exp.company}
+                  className="companyLogo"
+                />
+              )}
+              <h2 className="companyTitle">{exp.company}</h2>
+            </div>
             <p className="description">{exp.description}</p>
             <ul>
               {exp.tech.map((techs, index) => (
-                <li key={index}>{techs}</li>
+                <li key={index}>
+                  {Array.isArray(techs) ? (
+                    <>
+                      <span
+                        className="techSvg"
+                        dangerouslySetInnerHTML={{ __html: techs[1] }}
+                      />
+                      <span>{techs[0]}</span>
+                    </>
+                  ) : (
+                    techs
+                  )}
+                </li>
               ))}
             </ul>
           </div>
