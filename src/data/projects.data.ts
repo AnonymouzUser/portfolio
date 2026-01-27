@@ -7,5 +7,5 @@ export const projects: ProjectsData[] = [
   { title: "E-commerce Site" },
   { title: "Blog" },
   { title: "Pomodoro App" },
-  { title: "To-Do List App" },
+  { title: "To-Do List" },
 ];
