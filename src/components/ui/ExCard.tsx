@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { experience, type ExperienceData } from "../../data/experience.data";
+import { experience } from "../../data/experience.data";
 
 export const ExCard = () => {
   return (
