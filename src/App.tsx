@@ -4,6 +4,7 @@ import {
   Home,
   Projects,
   Services,
+  Contact,
 } from "./components/sections";
 
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
       <Experience />
       <Projects />
       <Services />
+      <Contact />
     </>
   );
 }
