@@ -1,7 +1,7 @@
 export function Services() {
   return (
     <>
-      <section className="servicesContactSection">
+      <section className="servicesContactSection" id="services">
         <div className="container">
           <h1 className="title">Services</h1>
           <div className="servicesContact">

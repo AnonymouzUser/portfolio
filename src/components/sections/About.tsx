@@ -1,7 +1,7 @@
 export function About() {
   return (
     <>
-      <section className="aboutSection">
+      <section className="aboutSection" id="about">
         <div className="aboutContainer">
           <h1 className="aboutTitle">About</h1>
           <div className="about">

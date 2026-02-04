@@ -4,7 +4,7 @@ import { experience } from "../../data/experience.data";
 
 export const Experience = () => {
   return (
-    <section className="experienceSection">
+    <section className="experienceSection" id="experience">
       <div className="experienceContainer">
         <h1 className="title">Experience</h1>
         <div className="experienceContainerList">

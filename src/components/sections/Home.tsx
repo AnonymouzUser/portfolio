@@ -1,7 +1,7 @@
 export function Home() {
   return (
     <>
-      <section className="homeSection">
+      <section className="homeSection" id="home">
         <div className="homeContainer">
           <h1 className="homeTitle">Home</h1>
           <h1>Brayan Ocampo Lopez</h1>

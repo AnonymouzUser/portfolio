@@ -4,7 +4,7 @@ import { projects } from "../../data/projects.data";
 export function Projects() {
   return (
     <>
-      <section className="projectsSection">
+      <section className="projectsSection" id="projects">
         <div className="projectsContainer">
           <h1 className="title">Projects</h1>
           <div className="projects">
