@@ -13,6 +13,8 @@ interface CardProps {
   image?: string;
 }
 
+import { NavLink } from "react-router";
+
 export const Card = ({
   title,
   company,
@@ -23,8 +25,12 @@ export const Card = ({
   // image,
 }: CardProps) => {
   return (
-    <div className="card">
-      <a href="/experiencePage" className="cardExternalIcon">
+    <NavLink to="/experiencePage" className="card cardLink">
+      <button
+        type="button"
+        className="cardExternalIcon"
+        aria-label="Ver detalles"
+      >
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -35,7 +41,7 @@ export const Card = ({
           <polyline points="15 3 21 3 21 9"></polyline>
           <line x1="10" y1="14" x2="21" y2="3"></line>
         </svg>
-      </a>
+      </button>
       <div className="header">
         <h2 className="cardTitle">{company ? company : title}</h2>
       </div>
@@ -59,6 +65,6 @@ export const Card = ({
           </li>
         ))}
       </ul>
-    </div>
+    </NavLink>
   );
 };
