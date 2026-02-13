@@ -1,19 +1,19 @@
 import {
   About,
+  Contact,
   Experience,
   Home,
   Projects,
   Services,
-  Contact,
 } from "./components/sections";
 
 export function App() {
   return (
     <>
       <Home />
+      <Projects />
       <About />
       <Experience />
-      <Projects />
       <Services />
       <Contact />
     </>
