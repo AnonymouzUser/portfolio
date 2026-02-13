@@ -1,7 +1,7 @@
-export function Navbar() {
+export function Sidebar() {
   return (
     <>
-      <div className="navbar">
+      <div className="sidebar">
         <nav className="nav">
           <div className="links">
             <a href="#home">Home</a>
