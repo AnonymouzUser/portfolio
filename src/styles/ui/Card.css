@@ -8,26 +8,31 @@
   flex-direction: column;
   position: relative;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 
   &:hover {
     border-color: rgba(255, 255, 255, 0.6);
     background-color: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 24px rgba(255, 255, 255, 0.6);
+    & .cardExternalIcon {
+      opacity: 1;
+    }
   }
 
   & .cardExternalIcon {
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
+    background-color: transparent;
+    border: 0px;
+    opacity: 0;
 
     & svg {
       width: 100%;
