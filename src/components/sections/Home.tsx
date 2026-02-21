@@ -1,14 +1,14 @@
 export function Home() {
-  return (
-    <>
-      <section className="homeSection" id="home">
-        <div className="homeContainer">
-          <h1 className="homeTitle">Home</h1>
-          <h1>Brayan Ocampo Lopez</h1>
-          <h5>(AnonymouzUser)</h5>
-          <h4>Technologist in web software analysis and development.</h4>
-        </div>
-      </section>
-    </>
-  );
+	return (
+		<>
+			<section className="homeSection" id="home">
+				<div className="homeContainer">
+					<h1 className="homeTitle">Home</h1>
+					<h1>Brayan Ocampo Lopez</h1>
+					<h5>(devaspepito)</h5>
+					<h4>Technologist in web software analysis and development.</h4>
+				</div>
+			</section>
+		</>
+	);
 }
