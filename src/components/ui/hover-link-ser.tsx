@@ -9,7 +9,12 @@ interface HoverLinkProps {
   target?: string
 }
 
-export const HoverLinkSer = ({ link, title, theme, target }: HoverLinkProps) => {
+export const HoverLinkSer = ({
+  link,
+  title,
+  theme,
+  target,
+}: HoverLinkProps) => {
   return (
     <div className="transition-opacity duration-200">
       <HoverCard openDelay={10} closeDelay={100}>
@@ -20,7 +25,7 @@ export const HoverLinkSer = ({ link, title, theme, target }: HoverLinkProps) => 
               className="flex flex-row items-center gap-2 text-sm text-muted-foreground"
               target={target}
             >
-              <div className="h-2 w-2 shrink-0 rounded-full bg-blue-500"></div>
+              <div className="h-2 w-2 shrink-0 rounded-full bg-cyan-500"></div>
               <p
                 className={`font-semibold ${theme === "dark" ? "text-amber-50" : "text-slate-950"}`}
               >
