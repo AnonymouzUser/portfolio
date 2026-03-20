@@ -1,13 +1,15 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { HoverLinkExp } from "@/components/ui/hover-link-exp"
 import { HoverLinkSer } from "@/components/ui/hover-link-ser"
-import { HoverLinkPro } from "@/components/ui/hover-link-pro"
+
+import { CardPro } from "@/components/ui/card-pro"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { HoverLinkCon } from "@/components/ui/hover-link-con"
 
 interface homeProps {
   theme: string
@@ -62,6 +64,43 @@ export const Home = ({ theme }: homeProps) => {
       </div>
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-0">
+          <h1 className="mb-2 font-semibold">Projects</h1>
+          <div className="flex flex-row gap-3 p-1.5 pr-3 pl-3">
+            <CardPro
+              title="Toki System"
+              description="Minimal ecosystem."
+              className="flex-1"
+              link="https://tokisystem.vercel.app/"
+              theme={theme}
+            />
+            <CardPro
+              title="Toki Pomito"
+              description="Minimal Pomodoro timer."
+              className="flex-1"
+              link="https://tokipomito.vercel.app/"
+              theme={theme}
+            />
+          </div>
+          <div className="flex flex-row gap-3 p-1.5 pr-3 pl-3">
+            <CardPro
+              title="Toki List"
+              description="Minimal todo list app."
+              className="flex-1"
+              link="https://tokilist.vercel.app/"
+              theme={theme}
+            />
+            <CardPro
+              title="Toki Notes"
+              description="Minimal notes app."
+              className="flex-1"
+              link="https://tokinotes.vercel.app/"
+              theme={theme}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-0">
           <h1 className="mb-2 font-semibold">Experience</h1>
           <HoverLinkExp
             title="AndesBPO"
@@ -73,85 +112,12 @@ export const Home = ({ theme }: homeProps) => {
           />
           <HoverLinkExp
             title="Toki System"
-            description="Web Full Stack developer (React.js and Express.js)"
+            description="Web Full Stack developer (React.js)"
             theme={theme}
             paragraph1=""
             paragraph2=""
             paragraph3=""
           />
-        </div>
-        <div className="flex flex-col gap-12">
-          <div className="flex flex-col gap-0">
-            <h1 className="mb-2 font-semibold">Projects</h1>
-            <HoverLinkPro
-              link="https://tokipomito.vercel.app"
-              title="Toki Pomito"
-              theme={theme}
-              desc="A clean and minimal Pomodoro timer to help you stay focused."
-              tech={[
-                { name: "React" },
-                { name: "TailwindCSS" },
-                { name: "Vite" },
-              ]}
-              image={
-                theme === "dark"
-                  ? "https://tokipomito.vercel.app/opengraph-image-l.png"
-                  : "https://tokipomito.vercel.app/opengraph-image-d.png"
-              }
-              target="_blank"
-            />
-            <HoverLinkPro
-              link="https://tokisystem.vercel.app"
-              title="Toki System"
-              theme={theme}
-              desc="Minimal pomodoro timer"
-              tech={[
-                { name: "React" },
-                { name: "TailwindCSS" },
-                { name: "Vite" },
-              ]}
-              image={
-                theme === "dark"
-                  ? "https://tokisystem.vercel.app/opengraph-image-l.png"
-                  : "https://tokisystem.vercel.app/opengraph-image-d.png"
-              }
-              target="_blank"
-            />
-            <HoverLinkPro
-              link="https://tokilist.vercel.app"
-              title="Toki List"
-              theme={theme}
-              desc="A minimal todo list app to help you stay organized and productive."
-              tech={[
-                { name: "React" },
-                { name: "TailwindCSS" },
-                { name: "Vite" },
-              ]}
-              image={
-                theme === "dark"
-                  ? "https://tokilist.vercel.app/opengraph-image-l.png"
-                  : "https://tokilist.vercel.app/opengraph-image-d.png"
-              }
-              target="_blank"
-            />
-            <HoverLinkPro
-              link="https://tokinotes.vercel.app"
-              title="Toki Notes"
-              theme={theme}
-              desc="A minimal notes app to help you capture and organize your thoughts."
-              tech={[
-                { name: "React" },
-                { name: "TailwindCSS" },
-                { name: "Vite" },
-              ]}
-              image={
-                theme === "dark"
-                  ? "https://tokinotes.vercel.app/opengraph-image-l.png"
-                  : "https://tokinotes.vercel.app/opengraph-image-d.png"
-              }
-              target="_blank"
-            />
-          </div>
         </div>
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-0">
@@ -191,19 +157,19 @@ export const Home = ({ theme }: homeProps) => {
                 - Get in touch with me!
               </p>
             </div>
-            <HoverLinkSer
+            <HoverLinkCon
               link="mailto:contact.ocampo.info@gmail.com"
               title="E-mail"
               theme={theme}
               target="_blank"
             />
-            <HoverLinkSer
+            <HoverLinkCon
               link="https://linkedin.com/in/brayan-ocampo-lopez"
               title="LinkedIn"
               theme={theme}
               target="_blank"
             />
-            <HoverLinkSer
+            <HoverLinkCon
               link="https://instagram.com/its_solome"
               title="Instagram"
               theme={theme}
