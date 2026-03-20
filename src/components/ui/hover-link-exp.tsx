@@ -37,7 +37,7 @@ export const HoverLinkExp = ({
                 variant="link"
                 className="flex flex-row items-center gap-2 p-0 text-sm text-muted-foreground hover:cursor-pointer"
               >
-                <div className="h-2 w-2 shrink-0 rounded-full bg-blue-500"></div>
+                <div className="h-2 w-2 shrink-0 rounded-full bg-green-500"></div>
                 <p
                   className={`font-semibold ${theme === "dark" ? "text-amber-50" : "text-slate-950"}`}
                 >
@@ -55,18 +55,6 @@ export const HoverLinkExp = ({
           <div className="no-scrollbar flex flex-col gap-2 overflow-y-auto p-4 pb-0">
             <div className="flex flex-col gap-2 p-4">
               <h1 className="font-semibold">Description</h1>
-              <div className="flex items-center justify-center space-x-2">
-                <p className="text-muted-foreground">{paragraph1}</p>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <p className="text-muted-foreground">{paragraph2}</p>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <p className="text-muted-foreground">{paragraph3}</p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2 p-4 pb-0">
-              <h1 className="font-semibold">Responsabilities</h1>
               <div className="flex items-center justify-center space-x-2">
                 <p className="text-muted-foreground">{paragraph1}</p>
               </div>
