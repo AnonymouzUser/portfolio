@@ -8,7 +8,7 @@ interface navbarProps {
 
 export const Navbar = ({ theme, toggleTheme }: navbarProps) => {
   return (
-    <div className="mt-4 flex h-12 w-full flex-row items-center justify-between p-1">
+    <header className="mt-3 flex h-12 w-full flex-row items-center justify-between p-1 sm:mt-4">
       <div className="flex flex-row gap-2">
         {/* <Link
           to="/"
@@ -43,8 +43,9 @@ export const Navbar = ({ theme, toggleTheme }: navbarProps) => {
       </div>
       <div>
         <Button
+          aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
           onClick={toggleTheme}
-          className={`size-4 rounded-full bg-transparent transition-colors duration-300 hover:cursor-pointer hover:bg-transparent ${
+          className={`size-8 rounded-full bg-transparent p-0 transition-colors duration-300 hover:cursor-pointer hover:bg-transparent ${
             theme === "dark"
               ? "text-gray-400 hover:text-white"
               : "text-gray-500 hover:text-slate-950"
@@ -57,6 +58,6 @@ export const Navbar = ({ theme, toggleTheme }: navbarProps) => {
           )}
         </Button>
       </div>
-    </div>
+    </header>
   )
 }
