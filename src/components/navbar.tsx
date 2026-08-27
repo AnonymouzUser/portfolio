@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-// import { Link } from "react-router"
+import { Link } from "react-router"
 import { Sun, Moon } from "lucide-react"
 interface navbarProps {
   theme: string
@@ -10,7 +10,7 @@ export const Navbar = ({ theme, toggleTheme }: navbarProps) => {
   return (
     <header className="mt-3 flex h-12 w-full flex-row items-center justify-between p-1 sm:mt-4">
       <div className="flex flex-row gap-2">
-        {/* <Link
+        <Link
           to="/"
           className={`transition-all duration-300 ${
             theme === "dark"
@@ -20,26 +20,6 @@ export const Navbar = ({ theme, toggleTheme }: navbarProps) => {
         >
           home
         </Link>
-        <Link
-          to="/projects"
-          className={`transition-all duration-300 ${
-            theme === "dark"
-              ? "text-gray-400 hover:font-semibold hover:text-white"
-              : "text-gray-500 hover:font-semibold hover:text-slate-950"
-          }`}
-        >
-          projects
-        </Link>
-        <Link
-          to="/contact-me"
-          className={`transition-all duration-300 ${
-            theme === "dark"
-              ? "text-gray-400 hover:font-semibold hover:text-white"
-              : "text-gray-500 hover:font-semibold hover:text-slate-950"
-          }`}
-        >
-          contact-me
-        </Link> */}
       </div>
       <div>
         <Button
