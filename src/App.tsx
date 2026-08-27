@@ -13,8 +13,8 @@ export function App() {
   const routes = getRoutes(theme)
   return (
     <BrowserRouter>
-      <div className="flex min-h-svh justify-center">
-        <div className="flex w-[30%] flex-col gap-16 text-sm leading-loose">
+      <div className="flex min-h-svh justify-center px-4 sm:px-6">
+        <div className="flex w-full max-w-2xl flex-col gap-12 text-sm leading-loose sm:gap-16">
           <Navbar theme={theme} toggleTheme={toggleTheme} />
           <Routes>
             {routes.map((route) => (
